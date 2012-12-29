@@ -1958,14 +1958,14 @@ Handsontable.Core = function (rootElement, settings) {
   };
 
   /**
-   * Return cell value at `row`, `col`
+   * Return cell value at `row`, `prop`
    * @param {Number} row
-   * @param {Number} col
+   * @param {Number} prop
    * @public
    * @return {string}
    */
-  this.getDataAtCell = function (row, col) {
-    return datamap.get(row, datamap.colToProp(col));
+  this.getDataAtCell = function (row, prop) {
+    return datamap.get(row, prop);
   };
 
   /**
